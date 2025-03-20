@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Veille Technologique - Portfolio Myriam Jbilou</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-circle">M</span>
+                <span class="nav__logo-name">Myriam J.</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+                <h3 class="nav__name">Myriam</h3>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="index.html#projects" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="index.html#veille" class="nav__link active-link">Veille</a></li>
+                    <li class="nav__item"><a href="index.html#docs" class="nav__link">Docs</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== ARTICLE VEILLE ====================-->
+        <section class="veille section" id="veille">
+            <div class="veille__container container grid">
+                <article class="article veille-article">
+                    <header class="article__header container">
+                        <h1 class="section__title-1"><span>Veille technologique</span></h1>
+                        <div class="article__meta"
+                            style="text-align: center; font-size: var(--small-font-size); color: var(--text-color-light); margin-bottom: 1rem;">
+                            <span class="article__date">01 avril 2023</span> | <span class="article__author">Par Myriam
+                                Jbilou</span>
+                        </div>
+                        <p class="article__subtitle"
+                            style="text-align: center; font-size: var(--h2-font-size); color: var(--title-color); margin-bottom: 1.5rem;">
+                            IA Génératif (AIGen)
+                        </p>
+                    </header>
+                    <div class="article__content container grid">
+                        <!-- Texte de l'article -->
+                        <div class="article__text">
+                            <p class="article__paragraph">
+                                Dans cette veille technologique, nous explorons l'impact de l'IA générative sur
+                                l'industrie, la création numérique et la société. Nous démystifions les idées reçues et
+                                mettons en avant les opportunités ainsi que les défis que présente cette révolution
+                                technologique.
+                            </p>
+                            <p class="article__paragraph">
+                                L'IA générative permet de créer du contenu de manière automatique et innovante. Elle
+                                ouvre de nouvelles perspectives en matière de production de texte, d'image et même de
+                                musique, tout en posant des questions éthiques et de sécurité.
+                            </p>
+                        </div>
+                        <!-- Image de l'article -->
+                        <div class="article__image">
+                            <img src="assets/img/ia_article.png" alt="Illustration IA Génératif" class="article__img">
+                            <img src="assets/img/random-lines.svg" alt="" class="article__line">
+                            <div class="geometric-box"></div>
+                        </div>
+                    </div>
+                    <footer class="article__footer container" style="text-align: center; margin-top: 2rem;">
+                        <a href="index.html" class="button">
+                            <i class="ri-arrow-left-line"></i> Retour à l'accueil
+                        </a>
+                    </footer>
+                </article>
+
+                <!--==================== ARCHIVES CARROUSSEL ====================-->
+                <div class="veille__archives container" style="margin-top: 4rem;">
+                    <h2 class="section__title-2" style="text-align: center;"><span>Archives</span></h2>
+                    <!-- Swiper container -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="veille_article1.html" class="archive__link"
+                                    style="display: block; color: var(--title-color); text-decoration: none;">
+                                    <h3 class="archive__title"
+                                        style="font-size: var(--h2-font-size); margin-bottom: 0.5rem;">Titre de
+                                        l'Article 1</h3>
+                                    <p class="archive__date"
+                                        style="font-size: var(--small-font-size); color: var(--text-color-light);">15
+                                        Mars 2023</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="veille_article2.html" class="archive__link"
+                                    style="display: block; color: var(--title-color); text-decoration: none;">
+                                    <h3 class="archive__title"
+                                        style="font-size: var(--h2-font-size); margin-bottom: 0.5rem;">Titre de
+                                        l'Article 2</h3>
+                                    <p class="archive__date"
+                                        style="font-size: var(--small-font-size); color: var(--text-color-light);">10
+                                        Février 2023</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="veille_article3.html" class="archive__link"
+                                    style="display: block; color: var(--title-color); text-decoration: none;">
+                                    <h3 class="archive__title"
+                                        style="font-size: var(--h2-font-size); margin-bottom: 0.5rem;">Titre de
+                                        l'Article 3</h3>
+                                    <p class="archive__date"
+                                        style="font-size: var(--small-font-size); color: var(--text-color-light);">05
+                                        Janvier 2023</p>
+                                </a>
+                            </div>
+                            <!-- Ajoutez d'autres slides si nécessaire -->
+                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="index.html#home" class="footer__link">Accueil</a>
+                </li>
+                <li>
+                    <a href="index.html#about" class="footer__link">A propos</a>
+                </li>
+                <li>
+                    <a href="index.html#projects" class="footer__link">Projets</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
