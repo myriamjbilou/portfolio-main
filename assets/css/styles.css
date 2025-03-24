@@ -1699,7 +1699,7 @@ body.dark-theme {
   /* Centre le texte dans son conteneur */
   position: relative;
   /* Permet d'utiliser left / right / top / bottom */
-  left: -45rem;
+  left: -35rem;
   /* Décale légèrement vers la droite (ajustez la valeur) */
 }
 
