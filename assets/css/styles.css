@@ -1658,7 +1658,9 @@ body.dark-theme {
   /* Empêche le retour à la ligne */
   border-right: 2px solid var(--first-color);
   /* Simule un curseur */
-  /* Animation typewriter qui se joue une fois et laisse le texte tapé */
+}
+
+.project-year.animate {
   animation: typewriter 4s steps(10, end) forwards, blink-caret 0.75s step-end 1 forwards;
 }
 

@@ -158,3 +158,23 @@ sr.reveal(`.skill-tag`, {
     interval: 80,   // Chaque badge apparaît de façon décalée
     scale: 0.9      // Les badges sont légèrement « zoomés » pendant l’animation
   });
+
+  // Déclenche l'animation "typewriter" sur les éléments .project-year lorsque ceux-ci deviennent visibles
+  document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate");
+        }
+      });
+    }, {
+      threshold: 0.5 // L'élément doit être à 50% visible pour déclencher l'animation
+    });
+  
+    document.querySelectorAll(".project-year").forEach(el => {
+      observer.observe(el);
+    });
+});
+  
