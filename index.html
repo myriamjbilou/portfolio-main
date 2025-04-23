@@ -14,6 +14,11 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
    <title>Portfolio Myriam Jbilou</title>
 </head>
 
@@ -183,11 +188,11 @@
                   <a href="https://www.linkedin.com/in/myriam-jbilou/" target="_blank" class="button__ghost">
                      <i class="ri-linkedin-box-line"></i>
                   </a>
-                  
+
                   <a href="https://github.com/myriamjbilou" target="_blank" class="button__ghost">
-                        <i class="ri-github-line"></i>
+                     <i class="ri-github-line"></i>
                   </a>
-                  
+
                   <a href="assets/pdf/CV.pdf" download class="button__ghost tooltip" aria-label="Télécharger mon CV">
                      <i class="ri-file-download-line"></i>
                      <span class="tooltiptext">Voir mon CV</span>
@@ -276,7 +281,7 @@
          </div>
       </section>
 
-      <!--==================== PROJECTS ====================-->
+      <!-- ==================== SECTION : Projets avec accordéon intégré ==================== -->
       <section class="projects section" id="projects">
          <h2 class="section__title-1">
             <span>Projets.</span>
@@ -287,6 +292,7 @@
             <div class="geometric-box"></div>
             <h3 class="projects__group-title"><b>Projets scolaires</b></h3>
             <div class="projects__container container grid">
+
                <article class="projects__card">
                   <div class="projects__image">
                      <img src="assets/img/progress.png" alt="Site web en création" class="projects__img">
@@ -295,69 +301,145 @@
                      </a>
                   </div>
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">
-                        Projet - <span class="project-year">1er année</span>
-                     </h3>
-                     <h2 class="projects__title">En cours de création</h2>
+                     <h3 class="projects__subtitle">Projet - <span class="project-year">1er année</span></h3>
+                     <h2 class="projects__title">Ethoryam</h2>
                      <p class="projects__description">
-                        Bientôt !
+                        Développement d’une application déclenchant une réunion d’urgence via un raccourci clavier (ex.
+                        A + Z + E).<br><br>
+                        Une notification sonore est envoyée aux utilisateurs prédéfinis, indiquant le titre et le lieu
+                        de la réunion pour une réaction rapide en situation critique.<br><br>
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                              alt="Java" width="16" style="margin-right: 6px;">
+                           Java
+                        </span>
+
+                        <!-- Eclipse -->
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
+                              alt="Eclipse" width="16" style="margin-right: 6px;">
+                           Eclipse
+                        </span>
+
+                        <a href="assets/docs/Ethoryam_Portfolio.pdf" target="_blank" rel="noopener noreferrer"
+                           class="download-badge">
+                           <i class="ri-file-text-line"></i>
+                           Documents
+                        </a>
                      </p>
                   </div>
-                  <div class="projects__buttons">
-                     <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> Voir
-                     </a>
-                     <a href="https://dribbble.com/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> Voir
-                     </a>
-                  </div>
+                  <div class="projects__indicator"><i class="ri-arrow-down-s-line"></i></div>
                </article>
+
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/progress.png" alt="RFTG project" class="projects__img">
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
+                     <img src="assets/img/dvd_rftg.png" alt="RFTG project" class="projects__img">
+                     <a href="#" class="projects__button button"><i class="ri-arrow-right-up-line"></i></a>
                   </div>
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">
-                        Projet - <span class="project-year">2ème année</span>
-                     </h3>
+                     <h3 class="projects__subtitle">Projet - <span class="project-year">2ème année</span></h3>
                      <h2 class="projects__title">RFTG</h2>
                      <p class="projects__description">
-                        Bientôt !
+                        Le projet RFTG (Raised From The Graveyard) est une solution complète de gestion de locations de
+                        DVD, composée de :<br><br>
+
+                        <strong>• PEACH :</strong> Base de données centralisée (films, clients, réservations).<br>
+
+                        <strong>• TOAD :</strong> API REST pour la communication entre les services.<br>
+
+                        <strong>• MARIO :</strong> Application web (Laravel) pour les gérants : gestion du catalogue, du
+                        stock et suivi des locations.<br>
+
+                        <strong>• LUIGI :</strong> Application Android pour les clients : consultation, réservation et
+                        suivi des locations.<br><br>
+
+                        Le projet combine développement web, mobile, API et base de données pour répondre aux besoins
+                        des gérants et offrir une expérience fluide aux utilisateurs.<br><br>
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                              width="16" style="margin-right: 6px;">
+                           PHP
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="16"
+                              style="margin-right: 6px;">
+                              <path fill="#f0513f"
+                                 d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zM38.588 10.417c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751z" />
+                           </svg>
+                           Laravel
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                              alt="CSS" width="16" style="margin-right: 6px;">
+                           CSS
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                              alt="JavaScript" width="16" style="margin-right: 6px;">
+                           JavaScript
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                              alt="Java" width="16" style="margin-right: 6px;">
+                           Java
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <i class="ri-database-2-line" style="font-size: 16px; margin-right: 6px;"></i>
+                           PHPMyAdmin
+                        </span>
+
+                        <a href="assets/docs/RFTG_Portfolio.pdf" target="_blank" rel="noopener noreferrer"
+                           class="download-badge">
+                           <i class="ri-file-text-line"></i>
+                           Documents
+                        </a>
                      </p>
                   </div>
                   <div class="projects__buttons">
-                     <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> Voir
-                     </a>
+                     <a href="https://github.com/myriamjbilou/Toad" target="_blank" class="projects__link"><i
+                           class="ri-github-line"></i>
+                        Voir</a>
                   </div>
+                  <div class="projects__indicator"><i class="ri-arrow-down-s-line"></i></div>
                </article>
+
                <article class="projects__card">
                   <div class="projects__image">
                      <img src="assets/img/cudlyzilla.png" alt="Cudly Zilla project" class="projects__img">
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
+                     <a href="#" class="projects__button button"><i class="ri-arrow-right-up-line"></i></a>
                   </div>
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">
-                        Projet - <span class="project-year">2ème année</span>
-                     </h3>
+                     <h3 class="projects__subtitle">Projet - <span class="project-year">2ème année</span></h3>
                      <h2 class="projects__title">Cudly Zilla</h2>
                      <p class="projects__description">
-                        E-commerce de vente de peluches, entièrement en anglais.
+                        CudlyZilla est un site web conçu exclusivement en anglais, dédié à la consultation et à
+                        l’achat de peluches.<br><br>
+                        Il propose une interface intuitive permettant de naviguer dans un large catalogue, consulter les
+                        fiches produits.<br><br>
+                        Le projet allie développement web et communication en anglais, tant pour l’interface que pour
+                        les contenus.
                      </p>
                   </div>
                   <div class="projects__buttons">
-                     <a href="https://github.com/myriamjbilou/CudlyZila-main" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> Voir
-                     </a>
-                     <a href="https://dribbble.com/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> Voir
-                     </a>
+                     <a href="https://github.com/myriamjbilou/CudlyZila-main" target="_blank" class="projects__link"><i
+                           class="ri-github-line"></i> Voir</a>
+                     <a href="https://turkbabayaga.github.io/ecom_cudly_zila/" target="_blank" class="projects__link"><i
+                           class="ri-dribbble-line"></i> Voir</a>
                   </div>
+                  <div class="projects__indicator"><i class="ri-arrow-down-s-line"></i></div>
                </article>
 
             </div>
@@ -368,44 +450,142 @@
             <div class="geometric-box"></div>
             <h3 class="projects__group-title"><b>Projets en entreprise</b></h3>
             <div class="projects__container container grid">
+
                <article class="projects__card">
                   <div class="projects__image">
                      <img src="assets/img/VTT.png" alt="VTT project" class="projects__img">
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
+                     <a href="#" class="projects__button button"><i class="ri-arrow-right-up-line"></i></a>
                   </div>
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">
-                        Projet- <span class="project-year">1er année</span>
-                     </h3>
+                     <h3 class="projects__subtitle">Projet - <span class="project-year">1er année</span></h3>
                      <h2 class="projects__title">VTT (Virtual Testing Tool)</h2>
                      <p class="projects__description">
-                        Outil de tests automatisé : création, maintenance.<br>
-                        Compétences : C#, XAML, Gitlab.
+                        VTT est une application en C# (backend) et XAML (frontend) permettant de planifier, exécuter et
+                        analyser des tests automatisés.<br><br>
+                        Elle vise à améliorer la qualité logicielle en réduisant les erreurs humaines.<br><br>
+                        J’ai contribué au développement en résolvant divers tickets techniques, la création de plusieurs
+                        fonctionnalités en collaboration avec d'autres développeurs.<br><br>
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                              alt="C#" width="16" style="margin-right: 6px;">
+                           C#
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <i class="ri-code-box-line" style="font-size: 16px; margin-right: 6px;"></i>
+                           XAML
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                              alt="GitLab" width="16" style="margin-right: 6px;">
+                           GitLab
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <i class="ri-tools-line" style="font-size: 16px; margin-right: 6px;"></i>
+                           Redmine
+                        </span>
+
+                        <a href="assets/docs/VTT_Portfolio.pdf" target="_blank" rel="noopener noreferrer"
+                           class="download-badge">
+                           <i class="ri-file-text-line"></i>
+                           Documents
+                        </a>
+
                      </p>
                   </div>
+                  <div class="projects__indicator"><i class="ri-arrow-down-s-line"></i></div>
                </article>
 
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/workflow_.png" alt="Workflow Securisé project" class="projects__img">
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
+                     <img src="assets/img/workflow_.png" alt="Workflow Sécurisé project" class="projects__img">
+                     <a href="#" class="projects__button button"><i class="ri-arrow-right-up-line"></i></a>
                   </div>
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">
-                        Projet - <span class="project-year">2ème année</span>
-                     </h3>
-                     <h2 class="projects__title">Workflow Securisé</h2>
+                     <h3 class="projects__subtitle">Projet - <span class="project-year">2ème année</span></h3>
+                     <h2 class="projects__title">Workflow Sécurisé</h2>
                      <p class="projects__description">
-                        Application web intranet visant à réaliser, traiter et confirmer des demandes de congés,
-                        des notes de frais et des charges mensuelles.<br>
-                        Compétences : Php, Laravel, GitHub, Xamp, Documentation.
+                        Application intranet développée en équipe de A à Z, visant à centraliser la
+                        gestion des processus internes.<br><br>
+
+                        <strong>Fonctionnalités principales :</strong><br>
+                        • Gestion des demandes de congés avec validation par workflow<br>
+                        • Suivi et validation des notes de frais<br>
+                        • Gestion des charges mensuelles<br>
+                        • Un système de rôles sécurisé<br>
+                        • Un panneau d’administration complet pour la gestion des utilisateurs, des workflows et des
+                        droits d’accès<br><br>
+
+                        J’ai contribué au développement de ces fonctionnalités, à la mise en place de workflows, et à la
+                        réflexion sur la sécurité et l’expérience utilisateur.
+                        Le rôle de chef de projet était tournant, me permettant d’expérimenter la gestion d’équipe et la
+                        répartition des tâches.<br><br>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                              width="16" style="margin-right: 6px;">
+                           PHP
+                        </span>
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="16"
+                              style="margin-right: 6px;">
+                              <path fill="#f0513f"
+                                 d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zM38.588 10.417c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751z" />
+                           </svg>
+                           Laravel
+                        </span>
+
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <i class="ri-database-2-line" style="font-size: 16px; margin-right: 6px;"></i>
+                           PHPMyAdmin
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                              alt="CSS" width="16" style="margin-right: 6px;">
+                           CSS
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                              alt="GitLab" width="16" style="margin-right: 6px;">
+                           GitLab
+                        </span>
+
+
+                        <span class="tech-badge" style="display: inline-flex; align-items: center;">
+                           <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                              alt="JavaScript" width="16" style="margin-right: 6px;">
+                           JavaScript
+                        </span>
+
+                        <a href="assets/docs/Workflow_Portfolio.png" target="_blank" rel="noopener noreferrer"
+                           class="download-badge">
+                           <i class="ri-file-text-line"></i>
+                           Documents
+                        </a><br>
+
                      </p>
                   </div>
+                  <div class="projects__indicator"><i class="ri-arrow-down-s-line"></i></div>
                </article>
+
+
+
+
             </div>
          </div>
       </section>
@@ -584,7 +764,7 @@
                <a href="#services" class="footer__link">Compétences</a>
             </li>
 
-            
+
             <li>
                <a href="#projects" class="footer__link">Projets</a>
             </li>

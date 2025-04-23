@@ -157,24 +157,26 @@ sr.reveal(`.skill-tag`, {
     duration: 800,
     interval: 80,   // Chaque badge apparaît de façon décalée
     scale: 0.9      // Les badges sont légèrement « zoomés » pendant l’animation
-  });
+});
 
-  // Déclenche l'animation "typewriter" sur les éléments .project-year lorsque ceux-ci deviennent visibles
-  document.addEventListener("DOMContentLoaded", function() {
+// Déclenche l'animation "typewriter" sur les éléments .project-year lorsque ceux-ci deviennent visibles
+document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        } else {
-          entry.target.classList.remove("animate");
-        }
-      });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+            } else {
+                entry.target.classList.remove("animate");
+            }
+        });
     }, {
-      threshold: 0.5 // L'élément doit être à 50% visible pour déclencher l'animation
+        threshold: 0.5 // L'élément doit être à 50% visible pour déclencher l'animation
     });
-  
+
     document.querySelectorAll(".project-year").forEach(el => {
-      observer.observe(el);
+        observer.observe(el);
     });
 });
-  
+
+document.querySelectorAll('.projects__card').forEach(card => { const btn = card.querySelector('.projects__button'); const desc = card.querySelector('.projects__description'); const indicator = card.querySelector('.projects__indicator'); btn.addEventListener('click', e => { e.preventDefault(); const isExpanded = desc.classList.toggle('expanded'); btn.classList.toggle('open', isExpanded); if (isExpanded) { desc.style.maxHeight = desc.scrollHeight + 'px'; indicator.style.display = 'none'; } else { desc.style.maxHeight = null; indicator.style.display = 'block'; } }); });
+
