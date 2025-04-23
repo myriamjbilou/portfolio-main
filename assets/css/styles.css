@@ -1790,6 +1790,7 @@ body.dark-theme {
   width: 60px;
   bottom: 1rem;
   right: 1rem;
+  color: #000000;
 }
 
 .article__footer {
